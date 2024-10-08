@@ -106,7 +106,7 @@ const Qualification = () => {
 
             <div className="qualification__data">
               <div>
-                <h3 className="qualification__title">Customer Support Agent</h3>
+                <h3 className="qualification__title">Customer Sales representative</h3>
                 <span className="qualification__subtitle">
                   <a className="qualification__link" href="https://eraconbpo.com/" target="_blank" rel="noopener noreferrer">Eracon Technologies</a>
                 </span>
