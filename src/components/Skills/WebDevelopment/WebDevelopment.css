@@ -1,0 +1,86 @@
+.skills__content {
+    background-color: var(--container-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    border-radius: 1.25rem;
+}
+
+.skills__box {
+    display: flex;
+    justify-content: space-between; /* Aligns groups side by side */
+    align-items: flex-start; /* Aligns items at the top */
+}
+
+.skills__group {
+    flex: 1; /* Ensures both groups take equal space */
+    padding: 1rem; /* Adds padding around each group */
+    display: flex;
+    flex-direction: column; /* Stack subtitle and skills */
+}
+
+/* New class to limit skills to a maximum of 6 */
+.skills__limited {
+    display: grid;
+    grid-template-rows: repeat(6, auto); /* Allow up to 6 skills */
+    overflow: hidden; /* Hide excess skills */
+}
+
+.skills__separator {
+    width: 2px; /* Thickness of the separator */
+    background-color: rgba(0, 0, 0, 0.5); /* Increased visibility for the separator */
+    margin: 0 1rem; /* Reduced spacing around the separator */
+    height: auto; /* Automatic height based on content */
+}
+
+.skills__subtitle {
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-1);
+}
+
+/* Ensure proper spacing between skills */
+.skills__data {
+    display: flex; /* Keep display flex for the skills data */
+    column-gap: 0.5rem; /* Ensure proper spacing */
+    margin-bottom: 0.5rem; /* Adjusts spacing between skills */
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+    .skills__box {
+        flex-direction: column; /* Stack groups vertically on medium devices */
+    }
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+    .skills__content {
+        padding: 1.5rem; /* Less padding on smaller devices */
+    }
+
+    .skills__title {
+        font-size: var(--large-font-size); /* Adjust title font size */
+    }
+}
+
+/* For small devices */
+@media screen and (max-width: 576px) {
+    .skills__title {
+        font-size: var(--medium-font-size); /* Smaller title font size */
+    }
+
+    .skills__data {
+        flex-direction: column; /* Stack skills vertically */
+    }
+}
+
+/* For extra small devices */
+@media screen and (max-width: 350px) {
+    .skills__title {
+        font-size: var(--small-font-size); /* Further decrease title font size */
+    }
+
+    .skills__data {
+        column-gap: 0.25rem; /* Adjust spacing for tiny screens */
+    }
+}

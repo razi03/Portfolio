@@ -1,0 +1,108 @@
+.skills__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    justify-content: center;
+}
+
+.skills__web-dev {
+    grid-column: span 1;
+}
+
+.skills__web-dev__box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns for Frontend and Backend */
+    gap: 2rem;
+}
+
+.skills__content {
+    background-color: var(--container-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 2rem 4rem;
+    border-radius: 1.25rem;
+}
+
+.skills__title {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    text-align: center;
+    margin-bottom: var(--mb-1-5);
+}
+
+.skills__box {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* One column for skills */
+    gap: 2.5rem; /* Space between skills */
+}
+
+/* Ensure each skill group can contain up to 6 skills */
+.skills__group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two skills per row */
+    row-gap: 1rem;
+}
+
+.skills__data {
+    display: flex;
+    column-gap: 0.5rem;
+}
+
+.skills .bx-badge-check {
+    font-size: 1rem;
+    color: var(--title-color);
+}
+
+.skills__name {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    line-height: 18px;
+}
+
+.skills__level {
+    font-size: var(--tiny-font-size);
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+    .skills__container {
+        grid-template-columns: repeat(1, 1fr); /* Single column on medium devices */
+    }
+
+    .skills__box {
+        gap: 1.5rem; /* Reduce gap */
+    }
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+    .skills__content {
+        padding: 1.5rem; /* Less padding on smaller devices */
+    }
+
+    .skills__title {
+        font-size: var(--large-font-size); /* Adjust title font size */
+    }
+}
+
+/* For small devices */
+@media screen and (max-width: 576px) {
+    .skills__title {
+        font-size: var(--medium-font-size); /* Smaller title font size */
+    }
+
+    .skills__data {
+        flex-direction: column; /* Stack skills vertically */
+    }
+}
+
+/* For extra small devices */
+@media screen and (max-width: 350px) {
+    .skills__title {
+        font-size: var(--small-font-size); /* Further decrease title font size */
+    }
+
+    .skills__data {
+        column-gap: 0.25rem; /* Adjust spacing for tiny screens */
+    }
+}
