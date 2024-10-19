@@ -62,7 +62,7 @@ const Services = () => {
                   <p className="services__modal-info">E-commerce solutions and payment integrations.</p>
                 </li>
               </ul>
-              <a href="" className="button button--flex hire-me__button"  onClick={handleHireMeClick}>Hire Me<svg
+              <a href="#contact" className="button button--flex hire-me__button"  onClick={handleHireMeClick}>Hire Me<svg
                   className="button__icon"
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -123,7 +123,7 @@ const Services = () => {
                   <p className="services__modal-info">Streamlining workflows using automation tools like Zapier and Make.</p>
                 </li>
               </ul>
-              <a href="" className="button button--flex hire-me__button"  onClick={handleHireMeClick}>Hire Me<svg
+              <a href="#contact" className="button button--flex hire-me__button"  onClick={handleHireMeClick}>Hire Me<svg
                   className="button__icon"
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -184,7 +184,7 @@ const Services = () => {
                   <p className="services__modal-info">Integration with CRMs and marketing systems.</p>
                 </li>
               </ul>
-              <a href="" className="button button--flex hire-me__button"  onClick={handleHireMeClick}>Hire Me<svg
+              <a href="#contact" className="button button--flex hire-me__button"  onClick={handleHireMeClick}>Hire Me<svg
                   className="button__icon"
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"

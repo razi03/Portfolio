@@ -11,7 +11,7 @@ const Testimonials = () => {
   const [autoplay, setAutoplay] = useState(true);
 
   return (
-    <section className="testimonials container section">
+    <section id='testimonials' className="testimonials container section">
       <h2 className="section__title">My clients say</h2>
       <span className="section__subtitle">Testimonial</span>
 
